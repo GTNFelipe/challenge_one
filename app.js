@@ -22,3 +22,4 @@ let amigos = [];
 
     document.querySelector("input").value = "";
     }
+//teste de commit
