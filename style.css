@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-primary: #00504c;
+    --color-secondary: #00a39b;
+    --color-tertiary: #00837c;
+    --color-button: #00837c;
+    --color-button-hover: #006d67;
+    --color-text: #00413d;
     --color-white: #FFFFFF;
 }
 
@@ -62,10 +62,10 @@ body {
 }
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: "Merriweather", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: white;
     margin: 10px 0;
     text-align: center;
 }
@@ -107,29 +107,29 @@ body {
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: "Merriweather", serif;
     font-size: 16px;
-    border: 2px solid #000;
+    border: 2px solid #00504c;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.658);
     cursor: pointer;
 }
 
 .button-add {
     background-color: var(--color-tertiary);
-    color: var(--color-text);
+    color: white;
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #006d67;
 }
 
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    color: white;
+    font-family: "Merriweather", serif;;
     font-size: 18px;
     margin: 20px 0;
 }
