@@ -22,4 +22,3 @@ let amigos = [];
 
     document.querySelector("input").value = "";
     }
-// será que vai?
