@@ -33,3 +33,12 @@ function atualizarLista() {
     })
 }
 
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("A lista de amigos está vazia. Adicione amigos antes de realizar o sorteio");
+        return
+    }
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    resultado.innerHTML = "Amigo sorteado: <strong>${amigoSorteado}</strong>";
+}
+document.getElementById("sortearAmigo").addEventListener("click", sortearAmigo);
