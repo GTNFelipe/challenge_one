@@ -33,10 +33,3 @@ function atualizarLista() {
     })
 }
 
-//     document.getElementById("listaAmigos").appendChild(li);
-
-//     document.querySelector("input").value = "";
-//     const listaAmigos = document.getElementById("lista-Amigos");
-//     listaAmigos.InnerHTML = "";
-// }
-
