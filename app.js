@@ -1,8 +1,11 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
 let amigos = [];
-    
-document.getElementById('adicionarAmigo').addEventListener('click', adicionarAmigo);
 
+//Aqui estão os botões que serão usados no processo.
+document.getElementById('adicionarAmigo').addEventListener('click', adicionarAmigo);
+document.getElementById("sortearAmigo").addEventListener("click", sortearAmigo);
+
+//Aqui é a primeira função, basicamente ela é para adicionar um nome a lista. Aqui também é retirado nomes duplicados
 function adicionarAmigo() {
     let nomeAdicionado = document.querySelector("input").value.trim();
 
@@ -23,6 +26,7 @@ function adicionarAmigo() {
     document.querySelector("input").value = "";
 }
 
+//Essa é a segunda função, ela é para atualizar a lista conforme os nomes são adicionados.
 function atualizarLista() {
     const listaAmigos = document.getElementById("listaAmigos");
     listaAmigos.innerHTML = ""; 
@@ -33,6 +37,7 @@ function atualizarLista() {
     })
 }
 
+//Terceira função, usada para sortear um dos nomes que foi inserido na lista e ela também serve para limpar a lista após o sorteio.
 function sortearAmigo() {
     if (amigos.length === 0) {
         alert("A lista de amigos está vazia. Adicione amigos antes de realizar o sorteio");
@@ -45,4 +50,4 @@ function sortearAmigo() {
     amigos = [];
     atualizarLista()
 }
-document.getElementById("sortearAmigo").addEventListener("click", sortearAmigo);
+
